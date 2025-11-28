@@ -1,0 +1,19 @@
+# Chặn thư mục thư viện nặng (QUAN TRỌNG NHẤT)
+node_modules/
+
+# Chặn file build (khi nào deploy mới cần)
+dist/
+build/
+
+# Chặn file biến môi trường (chứa mật khẩu, API key...)
+.env
+.env.local
+
+# Chặn các file rác của hệ thống
+.DS_Store
+Thumbs.db
+
+# Chặn các file log lỗi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

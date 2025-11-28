@@ -1,0 +1,32 @@
+/*
+1. tài khoản admin:
+{
+    "email": "admin@test.com",
+    "matKhau": "123456"
+}
+
+
+
+4. Thân Minh Tuấn (SV)
+{
+    "email": "zezodow123@gmail.com",
+    "matKhau": "tmt592004"
+}
+
+5. Lê Bảo Khánh (SV)
+{
+    "email": "lebaokhanh@sv.com",
+    "matKhau": "123"
+}
+
+6. Thân Minh Tuấn (quanlymoi)
+{
+    "email": "quanlymoi@test.com",
+    "matKhau": "123456"
+}
+
+7. Thân Minh Tuấn 2
+{
+    "email": "thanminhtuan123@gmail.com",
+    "matKhau": "123456"
+}

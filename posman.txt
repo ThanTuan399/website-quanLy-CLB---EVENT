@@ -1,0 +1,53 @@
+1. POST: http://localhost:3000/api/auth/login
+{
+    "email": "quanlymoi@test.com",
+    "matKhau": "123456"
+}
+
+2. POST: http://localhost:3000/api/auth/register
+{
+    "hoTen": "Thân Minh Tuấn 2",
+    "email": "thanminhtuan123@gmail.com",
+    "matKhau": "123456",
+    "mssv": "672011",
+    "vaiTro": "STUDENT"
+}
+
+3. GET: http://localhost:3000/api/users/profile
+- Authorizaion: Token{sinhVien}
+
+4. PUT:  http://localhost:3000/api/users/profile
+- Authorizaion: Token{sinhVien}
+{
+     "avatarUrl": "https://example.com/anh-dep.jpg"
+}
+
+5. GET: http://localhost:3000/api/clubs
+
+6. POST: http://localhost:3000/api/events/clubs/1
+- Authorizaion: Token{idCLB}
+{
+  "tenSuKien": "Workshop Lập trình Node.js",
+  "moTa": "Học cách xây dựng API chuẩn.",
+  "thoiGianBatDau": "2025-12-01 08:00:00",
+  "thoiGianKetThuc": "2025-12-01 11:30:00",
+  "diaDiem": "Phòng Lab 3, Tòa A",
+  "soLuongToiDa": 50,
+  "anhBiaUrl": "https://example.com/banner.jpg"
+}
+
+7. GET: http://localhost:3000/api/events
+
+8.  POST: http://localhost:3000/api/registrations/register
+- Authorizaion: Token{sinhVien}
+{ "eventId": 1 }
+
+9. GET: http://localhost:3000/api/registrations/ticket/1
+- Authorizaion: Token{sinhVien}
+
+10. POST: http://localhost:3000/api/registrations/check-in
+- Authorizaion: Token{banQlyClb}
+{ "userId": [sinhVien], "eventId": 1 }
+
+11. GET: http://localhost:3000/api/registrations/reports/1
+- Authorizaion: Token{banQlyClb}
